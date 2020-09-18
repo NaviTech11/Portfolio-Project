@@ -26,6 +26,7 @@
     width: 100%;
     border-radius: 0;
     z-index: -1;   
+    opacity: 0.85;
 }
 
 .jumbotron > .title {
@@ -36,6 +37,7 @@
     padding-top: 5rem;
     text-shadow: 1.6px 1.6px #000;
     text-transform: uppercase;
+    
 }
 
 
@@ -52,10 +54,31 @@
 .profile{
     position: relative;
     text-align: center;
+    font-weight: 100;
+    height: 30rem;
+
+}
+
+.profile > h2 {
+    margin-top: 2rem;
+    text-transform: uppercase;
+    text-shadow: 1.6px 1.6px #fff5;
 }
 
 .profile > img {
-    height: 150px;
-    width: 150px;
+    height: 180px;
+    width: 180;
     border-radius: 180px;
+    margin: 2rem 0 3rem 0;
+}
+
+.profile > p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-align: justify;
+}
+
+.profile > p > span {
+    color: #0e3c77;
+    font-weight: 600;
 }
