@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Ivan Hernandez</title>
-   
+    <!-- Icon -->
+    <link rel="icon" href="/images/ihLogo.png" />
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
     <!-- External style sheet -->
@@ -14,14 +16,56 @@
     <!-- Fontawesome icons -->
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
 
 
 </head>
 <body>
     <!-------- NAVIGATION--------->
+    <section id="title">
+        <div class="container-fluid">
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-md navbar-dark sticky-top">
+                <a class="navbar-brand" href="index.html"><span class="nav__logo"><img src="images/ihLogo.svg" /></span><span class="nav__name">Ivan Hernandez</span></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNavbar">    
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portfolio">
+                                Portfolio
+                            </a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>  
+                    </ul>
+                </div>  
+            </nav>
+        </div>
+    </section>
     <!-------- INTRODUCTION -------->
+       <!-- Jumbotron -->
+    <div class="jumbotron">
+        <div class="title">
+            <p>Hi, I'm Ivan</p>
+        </div>
+        <div class="subtitle">
+            <p>Web Developer</p>
+        </div>
+    </div>
     <!------- ABOUT ------->
+    <section id="about">
+        <div class="container">
+            <div class="profile">
+                <img  src="/images/Ivan_H.jpg" alt="profile__picture">
+            </div>
+
+        </div>
+
+    </section>
     <!------- SERVICES ------->
     <!------- EXPERIENCE ------->
     <!------- RESUME ------->

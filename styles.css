@@ -1,3 +1,61 @@
 * {
     margin: 0;
 }
+
+/*------------Navbar------------*/
+.navbar {
+    position: absolute;
+    width: 100%;
+    font-family: "Roboto";
+}
+
+.nav__name {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 200;
+    text-shadow: .7px .7px #000;
+}
+
+
+
+/*-----------Introduction-----------*/
+.jumbotron {
+    background-image: url("https://images.unsplash.com/photo-1511818966892-d7d671e672a2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80");
+    background-size: cover;
+    background-position: center;
+    height: 35rem;
+    width: 100%;
+    border-radius: 0;
+    z-index: -1;   
+}
+
+.jumbotron > .title {
+    color: white;
+    font-weight: 200;
+    font-size: 4rem;
+    text-align: center;
+    padding-top: 5rem;
+    text-shadow: 1.6px 1.6px #000;
+    text-transform: uppercase;
+}
+
+
+.jumbotron > .subtitle {
+    color: white;
+    font-weight: 100;
+    font-size: 1.5rem;
+    text-align: center;
+    text-shadow: 1.2px 1.2px #000;
+}
+
+/*-------------ABOUT----------*/
+
+.profile{
+    position: relative;
+    text-align: center;
+}
+
+.profile > img {
+    height: 150px;
+    width: 150px;
+    border-radius: 180px;
+}
