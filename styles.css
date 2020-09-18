@@ -2,6 +2,15 @@
     margin: 0;
 }
 
+/* -----DIVIDER ----- */
+
+hr {
+    border: dotted rgba(1, 1, 1, 0.6) 10px;
+    border-bottom: none;
+    width: 4%;
+    margin: 100px auto;
+}
+
 /*------------Navbar------------*/
 .navbar {
     position: absolute;
@@ -22,7 +31,7 @@
     background-image: url("https://images.unsplash.com/photo-1511818966892-d7d671e672a2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80");
     background-size: cover;
     background-position: center;
-    height: 35rem;
+    height: 44rem;
     width: 100%;
     border-radius: 0;
     z-index: -1;   
@@ -52,15 +61,21 @@
 /*-------------ABOUT----------*/
 
 .profile{
-    position: relative;
     text-align: center;
     font-weight: 100;
-    height: 30rem;
+    height: 40rem;
 
 }
 
+@media only screen and (min-width: 928px) {
+    .profile {
+      height: 28rem;
+    }
+  }
+
+
 .profile > h2 {
-    margin-top: 2rem;
+    margin-top: 5rem;
     text-transform: uppercase;
     text-shadow: 1.6px 1.6px #fff5;
 }
@@ -69,16 +84,77 @@
     height: 180px;
     width: 180;
     border-radius: 180px;
-    margin: 2rem 0 3rem 0;
+    margin-top: 2rem;
 }
 
 .profile > p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: 300;
     text-align: justify;
+    padding: 2rem;
+    line-height: 2.5;
 }
 
 .profile > p > span {
     color: #0e3c77;
     font-weight: 600;
+}
+
+/* ----------- WHAT I DO ----------- */
+.skills {
+    text-align: center;
+    font-weight: 100;
+    height: 52rem;
+
+}
+
+@media only screen and (max-width: 1000px) {
+    .skills {
+      height: 65rem;
+    }
+  }
+
+.skills > h2 {
+    text-transform: uppercase;
+    text-shadow: 1.6px 1.6px #fff5;  
+}
+
+.skills > p {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 1.2rem;
+}
+
+.skill__row {
+    width: 50%;
+    margin: 100px auto;
+    text-align: left;
+    line-height: 2;
+}
+
+.code__pic {
+    width: 25%;
+    float: left;
+    margin-right: 10px;
+    
+}
+.design__pic {
+    width: 25%;
+    float: right;
+    margin-left: 10px;
+}
+.music__pic {
+    width: 25%;
+    float: left;
+    margin-right: 10px
+}
+
+
+
+
+
+/*---------- FOOTER ----------*/
+
+#footer {
+    position: relative;
 }
