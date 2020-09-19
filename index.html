@@ -12,7 +12,7 @@
     <!-- External style sheet -->
     <link rel="stylesheet" href="styles.css" />
     <!-- Animate CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> -->
     <!-- Fontawesome icons -->
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
     <!-- Google Fonts -->
@@ -51,10 +51,12 @@
        <!-- Jumbotron -->
     <div class="jumbotron">
         <div class="title">
-            <p>Hi, I'm Ivan</p>
+            <p class="effect">
+                <!-- Title effect with JS -->
+            </p>
         </div>
         <div class="subtitle">
-            <p>Web Developer</p>
+            <p>Web Developer </p>
         </div>
     </div>
     <!------- ABOUT ------->
@@ -88,7 +90,7 @@
                     </p>
                 </div>
                 <div class="skill__row">
-                    <img class="design__pic" src="images/design.png" alt="design"/>
+                    <img class="design__pic" src="images/design.png" alt="design" />
                     <h5>Design</h5>
                     <p>
                         I believe that design is being able to deliver a functional product that allows user-friendly experiences that people can enjoy on all digital platforms.
@@ -98,7 +100,7 @@
                     <img class="music__pic" src="images/music.png" alt="music"/>
                     <h5>Music</h5>
                     <p>
-                        In my 15-year career as a musician and teacher, I have developed the arts of attention to detail, long-term planning, and discipline through self-awareness, creativity, and curiosity.
+                        Over 10 years of experience as an international performer and teacher, I have developed the arts of discipline through self-awareness, creativity, curiosity, attention to detail and long-term planning.
                     </p>
                 </div>
             </div>        
@@ -106,16 +108,148 @@
     </section>
 
     
-    <!------- RESUME ------->
+    <!------- EXPERIENCE ------->
+    <!-------- RESUME ------->
     <!------- PORTFOLIO ------->
     <section id="portfolio">
         <div class="container">
-            <hr />
-            <h2>Portfolio</h2>
+            <div class="portfolio">
+                <hr />
+                <h2>Portfolio</h2>
+
+                <div class="container my-4">
+                       
+                    <!--Carousel Wrapper-->
+                    <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+                
+                      <!--Controls-->
+                      <div class="controls-top">
+                        <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
+                        <a class="btn-floating" href="#multi-item-example" data-slide="next"><i class="fa fa-chevron-right"></i></a>
+                      </div>
+                      <!--/.Controls-->
+                
+                      <!--Indicators-->
+                      <ol class="carousel-indicators">
+                        <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
+                        <li data-target="#multi-item-example" data-slide-to="1"></li>
+                        <!-- <li data-target="#multi-item-example" data-slide-to="2"></li> -->
+                      </ol>
+                      <!--/.Indicators-->
+                
+                      <!--Slides-->
+                      <div class="carousel-inner" role="listbox">
+                
+                        <!--First slide-->
+                        <div class="carousel-item active">
+                
+                          <div class="row">
+                            <div class="col-md-4">
+                              <div class="card mb-2">
+                                <img class="card-img-top" src="/images/netflix-clone.png"
+                                  alt="Card image cap">
+                                <div class="card-body">
+                                  <h4 class="card-title">Netflix Clone</h4>
+                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                                    card's content.</p>
+                                  <a class="btn btn-outline-primary">See Live</a>
+                                </div>
+                              </div>
+                            </div>
+                
+                            <div class="col-md-4 clearfix d-none d-md-block">
+                              <div class="card mb-2">
+                                <img class="card-img-top" src="/images/tindog.jpg"
+                                  alt="Card image cap" >
+                                <div class="card-body">
+                                  <h4 class="card-title">Tindog</h4>
+                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                                    card's content.</p>
+                                  <a class="btn btn-outline-primary">See Live</a>
+                                </div>
+                              </div>
+                            </div>
+                
+                            <div class="col-md-4 clearfix d-none d-md-block">
+                              <div class="card mb-2">
+                                <img class="card-img-top" src="/images/performerWebsite.jpg"
+                                  alt="Card image cap" >
+                                <div class="card-body">
+                                  <h4 class="card-title">Performer Website</h4>
+                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                                    card's content.</p>
+                                  <a class="btn btn-outline-primary">See Live</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                
+                        </div>
+                        <!--/.First slide-->
+                
+                        <!--Second slide-->
+                        <div class="carousel-item">
+                
+                          <div class="row">
+                            <div class="col-md-4">
+                              <div class="card mb-2">
+                                <img class="card-img-top" src="/images/simon-game.png"
+                                  alt="Card image cap">
+                                <div class="card-body">
+                                  <h4 class="card-title">Simon Game</h4>
+                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                                    card's content.</p>
+                                  <a class="btn btn-outline-primary">See Live</a>
+                                </div>
+                              </div>
+                            </div>
+                
+                            <div class="col-md-4 clearfix d-none d-md-block">
+                              <div class="card mb-2">
+                                <img class="card-img-top" src="/images/drum-kit.png"
+                                  alt="Card image cap">
+                                <div class="card-body">
+                                  <h4 class="card-title">Drum Kit</h4>
+                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                                    card's content.</p>
+                                  <a class="btn btn-outline-primary">See Live</a>
+                                </div>
+                              </div>
+                            </div>
+                
+                            <div class="col-md-4 clearfix d-none d-md-block">
+                              <div class="card mb-2">
+                                <img class="card-img-top" src="/images/quote-generator.png"
+                                  alt="Card image cap">
+                                <div class="card-body">
+                                  <h4 class="card-title">Quote Generator</h4>
+                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                                    card's content.</p>
+                                  <a class="btn btn-outline-primary">See Live</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                
+                        </div>
+                        <!--/.Second slide-->
+                
+                      </div>
+                      <!--/.Slides-->
+                
+                    </div>
+                    <!--/.Carousel Wrapper-->
+                
+                
+                  </div>
+
+            </div>
 
         </div>
 
     </section>
+
+    <!-------------- MODALS -------->
     <!-------- CONTACT  --------->
     <!------- FOOTER -------->
     <footer class="site-footer">
@@ -131,7 +265,7 @@
             </div>
             <div class="row text-center">
                 <div class="col-12">
-                <p class="copyright">&#169 Ivan Hernandez - <script>document.write(new Date().getFullYear())</script></p>
+                <p class="copyright">&#169 Ivan Hernandez -</p>
                 </div>
             </div>
         </div>
@@ -143,5 +277,6 @@
         <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
         <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
         <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="script.js"></script>
 </body>
 </html>
