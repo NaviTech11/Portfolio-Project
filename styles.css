@@ -245,7 +245,7 @@ nav.sticky {
     border: none;
 }
 .card-img-top {
-    opacity: 0.90;
+    opacity: 0.75;
     transition: 0.3s;
 }
 
