@@ -207,6 +207,27 @@ nav.sticky {
 #experience {
     text-align: center;
     padding: 3rem;
+    
+}
+
+.experience > h2 {
+    margin-bottom: 2rem;
+}
+
+.technologies__logos {
+    width: 5rem;
+    height: 5rem;
+    margin: 3rem;
+    opacity: 0.85;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    transition: 0.4s;
+}
+
+.technologies__logos:hover {
+    opacity: 1;
+    -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
 }
 
 /* -------- PORTFOLIO ----------- */
@@ -217,8 +238,12 @@ nav.sticky {
 
 .portfolio > h2 {
     text-transform: uppercase;
+    margin-bottom: 3rem;
 }
 
+.card{
+    border: none;
+}
 .card-img-top {
     opacity: 0.90;
     transition: 0.3s;
@@ -226,6 +251,24 @@ nav.sticky {
 
 .card-img-top:hover {
    opacity: 1;
+}
+
+.card-title{
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+.project__code {
+    height: 2.5rem;
+}
+
+.project__technologies{
+    height: 1.25rem;
+    margin: .2rem;
+}
+
+.btn-outline-primary{
+    margin: 1rem;
+    padding: .2rem;
 }
 
 /*---------- CONTACT -----------*/
