@@ -38,8 +38,7 @@ nav.sticky {
 }
 
   .navbar .navbar-collapse {
-    text-align: right;
-   
+    text-align: right; 
     
   }
 
@@ -47,6 +46,7 @@ nav.sticky {
       padding: 2px 0;
       margin: 0;
   }
+
   @media only screen and (max-width: 768px) {
     .resume__btn {
        margin-left: 80%;
@@ -60,6 +60,14 @@ nav.sticky {
       color: #fff;
   }
 
+  @media only screen and (max-width: 400px) {
+      .navbar{
+          font-size: .7rem;
+      } 
+    .nav__name {
+        font-size: 1rem;
+    }    
+}
 
 
 /*-----------Introduction-----------*/
@@ -99,6 +107,27 @@ nav.sticky {
     font-size: 1.7rem;
     text-align: center;
     text-shadow: 1.2px 1.2px #000;
+    animation: 1.8s ease-out 0s 1 slideInFromLeft;
+}
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+@media only screen and (max-width: 400px) {
+    .jumbotron {
+        height: 40rem;
+    }
+    .jumbotron > .title {
+        font-size: 2.2rem;
+    }    
+    .jumbotron > .subtitle {
+        font-size: 1.2rem;
+    }    
 }
 
 /*-------------ABOUT----------*/
@@ -146,6 +175,18 @@ nav.sticky {
 .profile > p > span {
     color: #0e3c77;
     font-weight: 600;
+}
+
+@media only screen and (max-width: 400px) {
+    .profile > p {
+        font-size: 1.3rem;
+        font-weight: 300;
+        text-align: left;
+        margin: 2rem;
+        padding-bottom: 2rem;
+        line-height: 1.6;
+        
+    }
 }
 
 /* ----------- WHAT I DO ----------- */
@@ -202,6 +243,13 @@ nav.sticky {
     margin-right: 10px
 }
 
+@media only screen and (max-width: 400px) {
+    .skill__row {
+       width: 75%;
+       line-height: 1.6;
+    }
+}
+
 /* ---------- EXPERIENCE ----------*/
 
 #experience {
@@ -234,6 +282,14 @@ nav.sticky {
       margin: 1.5rem;
     }
   }
+
+  @media only screen and (max-width: 400px) {
+    .technologies__logos {
+        width: 3rem;
+        height: 3rem;
+        margin: .8rem;
+    }
+}
 
 /* -------- PORTFOLIO ----------- */
 .portfolio {
@@ -274,6 +330,12 @@ nav.sticky {
 .btn-outline-primary{
     margin: 1rem;
     padding: .2rem;
+}
+
+@media only screen and (max-width: 400px) {
+    .portfolio{
+        height: 20rem;
+    }
 }
 
 /*---------- CONTACT -----------*/
@@ -380,4 +442,10 @@ nav.sticky {
     background: white;
     font-size: 1.75rem;
     padding-top: 0;
+}
+
+@media only screen and (max-width: 400px) {
+    .portfolio{
+        height: 20rem;
+    }
 }
