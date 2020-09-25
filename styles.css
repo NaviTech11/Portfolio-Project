@@ -60,7 +60,7 @@ nav.sticky {
       color: #fff;
   }
 
-  @media only screen and (max-width: 400px) {
+  @media only screen and (max-width: 485px) {
       .navbar{
           font-size: .7rem;
       } 
@@ -107,7 +107,7 @@ nav.sticky {
     font-size: 1.7rem;
     text-align: center;
     text-shadow: 1.2px 1.2px #000;
-    animation: 1.8s ease-out 0s 1 slideInFromLeft;
+    animation: 2s ease-in 0s 1 slideInFromLeft;
 }
 @keyframes slideInFromLeft {
     0% {
@@ -141,7 +141,7 @@ nav.sticky {
     box-shadow: 6.5px 3.5px 3.5px gray;
 }
 
-@media only screen and (min-width: 928px) {
+@media only screen and (min-width: 1000px) {
     .profile {
       height: 35rem;
     }
@@ -177,7 +177,7 @@ nav.sticky {
     font-weight: 600;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 485px) {
     .profile > p {
         font-size: 1.3rem;
         font-weight: 300;
@@ -243,7 +243,7 @@ nav.sticky {
     margin-right: 10px
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 485px) {
     .skill__row {
        width: 75%;
        line-height: 1.6;
@@ -283,7 +283,7 @@ nav.sticky {
     }
   }
 
-  @media only screen and (max-width: 400px) {
+  @media only screen and (max-width: 485px) {
     .technologies__logos {
         width: 3rem;
         height: 3rem;
@@ -332,7 +332,7 @@ nav.sticky {
     padding: .2rem;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 485px) {
     .portfolio{
         height: 20rem;
     }
@@ -444,8 +444,10 @@ nav.sticky {
     padding-top: 0;
 }
 
-@media only screen and (max-width: 400px) {
-    .portfolio{
-        height: 20rem;
+@media only screen and (max-width: 485px) {
+    .social-icon {
+        width: 2.6rem;
+        height: 2.6rem;
+        font-size: 1.1rem;
     }
 }
