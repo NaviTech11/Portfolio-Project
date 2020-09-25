@@ -97,6 +97,9 @@ nav.sticky {
     padding-top: 5rem;
     text-shadow: 1.6px 1.6px #000;
     text-transform: uppercase;
+    animation: fadeInAnimation ease 3s; 
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
    
 }
 
@@ -107,18 +110,22 @@ nav.sticky {
     font-size: 1.7rem;
     text-align: center;
     text-shadow: 1.2px 1.2px #000;
-    animation: 2s ease-in 0s 1 slideInFromLeft;
+    animation: fadeInAnimation ease 7s; 
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
 }
-@keyframes slideInFromLeft {
-    0% {
-      transform: translateX(-100%);
-    }
-    100% {
-      transform: translateX(0);
-    }
-  }
 
-@media only screen and (max-width: 400px) {
+@keyframes fadeInAnimation { 
+    0% { 
+        opacity: 0; 
+    } 
+    100% { 
+        opacity: 1; 
+     } 
+} 
+
+
+@media only screen and (max-width: 500px) {
     .jumbotron {
         height: 40rem;
     }
